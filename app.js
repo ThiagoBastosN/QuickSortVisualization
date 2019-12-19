@@ -23,12 +23,6 @@ const widthArray = [canvas.width];
 
 renderScreen();
 
-// for(let i = 0; i < widthArray; i++)
-// {
-//     ctx.fillStyle = 'red';
-//     ctx.fillRect(i * canvas.width, canvas.height - widthArray[i], 15, widthArray[i]);
-// }
-
 
 function renderScreen()
 {
@@ -65,7 +59,6 @@ function recursion(arr, startingPos, endPos)
 function quickSort(arr, movingIndex, pivotIndex)
 {
     let pivotIndexValue = arr[pivotIndex];
-    // console.log(arr);
 
     for(let i = movingIndex; i < pivotIndex; i++)
     {
@@ -81,7 +74,6 @@ function quickSort(arr, movingIndex, pivotIndex)
     }
 
     swapPositions(arr, movingIndex, pivotIndex);
-    console.log(arr);
     recursion(arr, movingIndex, pivotIndex);
 }
 
